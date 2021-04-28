@@ -48,7 +48,7 @@ function CartReducer(state = initialState, action) {
                 else
                 return true;
             });
-            return {cartItems: t}
+            return {...state,cartItems: t}
         }
         default : {
             return state;
